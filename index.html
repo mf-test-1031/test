@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水と自然。</title>
+ <style>
+*{  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 14px;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+}
+body{
+    font: 1rem; /*HTMLタグで適用した文字サイズクを基準とした比率で文字サイズを設定する。この場合、1rem=14px*/
+    line-height: 1.5; /*行間指定*/
+    color: rgb(0, 0, 0);
+}
+
+img {vertical-align: bottom; /*画像の上下方向の隙間を無くすために指定*/
+    width: 100%;
+    height: auto;
+} 
+
+li{
+ list-style:none; /*箇条書きのマーカー（黒っぽち）を消す*/
+}
+
+ul{
+margin: 0;
+padding: 0;
+
+}
+
+/*PC向けのCSSを定義する*/
+.sp{ display: none;
+}
+header{
+    display: flex;
+    background-color: rgb(207, 220, 233);
+}
+
+header h1{
+    width: 195px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+nav{
+    width: calc(100% - 195px - 30px);
+    padding: 0 40px 5px 30px; 
+}
+nav ul{
+  display: flex;
+    justify-content: flex-end; /*日本語圏だと、endは右寄せ、startは左よせ*/
+    align-items: flex-end; /*endは下揃え、startは上揃え*/
+    height: 69px; /*align-itemsを使うときはほぼ指定が必要*/
+    column-gap: 10%; /*横並びになる要素同士の間隔。両端の右側、左側には余白がとられない。*/
+}
+
+nav li{
+    width: 65px;
+}
+
+
+.mizuto{
+    position: relative;
+    background-image: url(images/top_image1.jpg), url(images/top_image2.jpg);
+    background-position: 7.8% 90% , 92.2% 18%; /*左・上*/
+    background-size:  30.2% auto , 28.6% auto;
+    background-repeat: no-repeat;
+     text-align: center;
+    padding: 16% 0 20% 0;
+    font-size: 1.4vw;
+  
+}
+
+.about{
+    background-color: rgba(255, 255, 255, 0.596);
+    padding: 2% 2%;
+}
+.about{
+    font-size: 1.3vw;
+}
+.about h1{
+    font-size: 2.8vw;
+}
+
+.various {
+    position: relative; 
+}
+.left{ 
+    width: 50%;
+    padding: 30% 25%;
+    position: absolute;
+}
+.left h2{
+    z-index: 30;
+    position: absolute;
+    top: 11.3%;
+    left: 31%;
+    width: 40%;
+}
+
+.right{
+    width: 50%;
+    padding: 30% 25%;
+    position: relative;
+    left: 50%;
+}
+
+.enoshima  img{
+        filter: blur(0);
+    }
+.enoshima  img:hover{
+        filter:blur(1px);
+    }
+.enoshima{z-index: 20;
+    left: 0%;
+    top: 5%;
+    width: 55.2%;
+    position: absolute;
+
+}
+.enobunn{
+    z-index: 30;
+    position: absolute;
+    font-size: 2.6vw;
+    top: 44%;
+    left: 0.4%;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow:  0px  0px  10px rgba(255, 255, 255, 0.6);
+    padding: 0% 35.6% 0% 35% ;
+}
+
+.yakushima img{
+        filter: blur(0);
+    }
+.yakushima img:hover{
+        filter:blur(1px);
+    }
+.yakushima{z-index: 20;
+    width: 55.2%;
+    right: 10.4%;
+    bottom: 5%;
+    position: absolute;
+}
+
+.yakubunn{z-index: 30;
+    position: absolute;
+    font-size: 2.6vw;
+    top: 44%;
+    left: 0.4%;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow:  0px  0px  10px rgba(255, 255, 255, 0.6);
+    padding: 0% 35.6% 0% 35% ;
+}
+
+footer{ color: #fff;
+  font-size: 2vw;
+  background-color: rgb(180, 201, 222);
+  display: flex;/*下の2つを使うために指定*/
+  justify-content: center;/*真ん中に配置する*/
+  align-items: center;/*縦方向の真ん中に配置する*/
+  padding: 3%;
+ 
+}
+ </style>   
+</head>
+<body>
+<main>
+
+ <header>
+     <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+     <nav class="pc">
+        <ul>
+            <li><a href="index.html"><img src="images/about.png" alt=""></a></li>
+            <li><a href="index2.html"><img src="images/enoshima.png" alt=""></a></li>
+            <li><a href="index3.html"><img src="images/yakushima.png" alt=""></a></li>
+        </ul>
+     </nav>
+</header>
+
+
+
+
+ <section class="top">
+    <h2><img src="images/TOP_top.png " alt=""> </h2>
+</section>
+
+
+<article class="mizuto">
+ <div class="about">  
+    <h1>水と。</h1>
+    <br>
+    <p>地球には多くの水が存在し、循環している。</p>
+    <p>そして水の周りには生き物があり、植物があり、空がある。</p>
+    <p>水は大いなるの恵である一方で、時には生命を脅かす。</p>
+    <br>    
+    <p>    ここでは私が今まで記録した、「水と自然」を紹介していく。</p>
+ </div> 
+
+</article>
+
+
+<section class="various">
+  <div class="left"> 
+  <h2><img src="images/various.png" alt=""></h2>    
+ </div>  
+
+ <div class="right"> 
+  <div class="enoshima">
+    <p class="enobunn">江ノ島</p>
+    <a href="index2.html"><img src="images/top_enoshima.png" alt="" ></a>
+  </div>
+    
+  <div class="yakushima">
+    <p class="yakubunn">屋久島</p> 
+    <a href="index3.html"><img src="images/top_yakushima.png" alt=""></a>
+  </div> 
+
+
+
+</div>  
+
+</section>
+
+<footer>
+    <p><small>© 2023 ISHIDA Yuusaku. All rights reserved.</small></p>
+</footer>
+    
+</main>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水と自然。</title>
+ <style>
+*{  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 14px;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+
+}
+body{
+    font: 1rem; /*HTMLタグで適用した文字サイズクを基準とした比率で文字サイズを設定する。この場合、1rem=14px*/
+    line-height: 1.8; /*行間指定*/
+    color: rgb(0, 0, 0);
+}
+
+img {vertical-align: bottom; /*画像の上下方向の隙間を無くすために指定*/
+    width: 100%;
+    height: auto;
+} 
+
+li{
+ list-style:none; /*箇条書きのマーカー（黒っぽち）を消す*/
+}
+/*PC向けのCSSを定義する*/
+.sp{ display: none;
+}
+header{
+    display: flex;
+    background-color: rgb(207, 220, 233);
+}
+
+header h1{
+    width: 195px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+nav{
+    width: calc(100% - 195px - 30px);
+    padding: 0 40px 5px 30px; 
+}
+nav ul{
+  display: flex;
+    justify-content: flex-end; /*日本語圏だと、endは右寄せ、startは左よせ*/
+    align-items: flex-end; /*endは下揃え、startは上揃え*/
+    height: 69px; /*align-itemsを使うときはほぼ指定が必要*/
+    column-gap: 10%; /*横並びになる要素同士の間隔。両端の右側、左側には余白がとられない。*/
+}
+
+nav li{
+    width: 65px;
+}
+
+
+.enoshima_main {
+    position: relative; 
+}
+
+.enoshima_main_left{
+    width: 40%;
+    padding: 28% 20%;
+    position: absolute;
+}
+
+.enomain_bunn{
+    font-size: 1.3vw;
+    left: 13%;
+    top: 40%;
+    position: absolute;
+
+}
+.enomain_bunn h2{
+    font-size: 2.4vw;
+}    
+
+.enoshima_main_right{ 
+    width: 60%;
+    padding: 28% 30%;
+    position: relative;
+    left: 40%;
+
+}
+.enoshima_main_right h2{
+    position: absolute;
+    top: 5.2%;
+    right: 8.68%; /*enoshima_main_rightのうちの5％*/
+    width: 83.3%;
+    height: auto;
+}
+
+
+.eno_kaisyokudou{
+    position: relative;
+    background-image: url(images/eno_kaisyo_image1.jpg), url(images/eno_kaisyo_image2.jpg);
+    background-position: 8% 0% , 88% 70% ;/*左から・上から*/
+    background-size:  28.64% auto , 28.12% auto;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 18% 25% 18% 25%;
+    font-size: 1.2vw;
+}
+.kaisyokudou h3{
+    font-size: 1.8vw;
+}
+
+.kaisyokudou {
+    background-color: rgba(255, 255, 255, 0.596);
+    padding: 4% 4%;
+}
+.tigobunn {
+    position: relative; 
+}
+.tigo_left{ 
+    width: 50%;
+    padding: 25% 25%;
+    position: absolute;
+}
+.tigo_left h4{
+    position: absolute;
+    top: 0%;
+    left: 24%;
+    width: 52%;
+    height: auto;
+}
+
+.tigo_right{
+    width: 50%;
+    padding: 25% 25%;
+    position: relative;
+    left: 50%;
+}
+
+.tigo_right h4{
+    top: 0%;
+    width: 90%;
+    right: 10.4%;
+
+    position: absolute;
+}
+
+.tigobunn{
+    font-size: 1.2vw;
+    right: 10.4%;
+    top: 62%;
+    position: absolute;
+}
+
+.tigobunn h3{
+    font-size: 1.8vw;
+}
+
+
+footer{ color: #fff;
+  font-size: 2vw;
+  background-color: rgb(180, 201, 222);
+  display: flex;/*下の2つを使うために指定*/
+  justify-content: center;/*真ん中に配置する*/
+  align-items: center;/*縦方向の真ん中に配置する*/
+  padding: 3%;
+ 
+}
+ </style>   
+</head>
+<body>
+<main>
+ <header>
+     <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+     <nav class="pc">
+        <ul>
+            <li><a href="index.html"><img src="images/about.png" alt=""></a></li>
+            <li><a href="index2.html"><img src="images/enoshima.png" alt=""></a></li>
+            <li><a href="index3.html"><img src="images/yakushima.png" alt=""></a></li>
+        </ul>
+     </nav>
+</header>
+
+
+ <section class="top">
+    <h2><img src="images/eno_top.png " alt=""> </h2>
+</section>
+
+<section class="enoshima_main">
+<div class="enoshima_main_left"> 
+  <div class="enomain_bunn">
+    <h2>江ノ島</h2> 
+    <p>観光名所でも知られる江ノ島は、周囲4km、標高60mほどの陸繋島である。周囲を海で囲まれており、地殻変動や海流、荒波がつくり出したダイナミックな地形を堪能できる。</p>
+</div>
+</div>  
+  
+  <div class="enoshima_main_right"> 
+  <h2><img src="images/eno_main.png" alt=""></h2>    
+ </div>  
+
+ 
+</section>  
+
+
+<article class="eno_kaisyokudou">
+ <div class="kaisyokudou">  
+    <h3>海食洞</h3>
+    <br>
+    <p>江ノ島をほぼ南北に走る断層部分は、岩盤がもろくなっているため、波の力でどんどんえぐられていく。侵食は断層に沿ってさらに奥へと進み、海食洞をつくった。島の最奥部には、岩屋と呼ばれる海食洞がある。</p>
+ </div> 
+
+</article>
+
+
+<section class="tigogahuti">
+    <div class="tigo_left"> 
+        <h4><img src="images/eno_tigo_image1.jpg" alt=""> </h4>
+   </div>  
+  
+   <div class="tigo_right"> 
+      <h4><img src="images/eno_tigo_image2.jpg" alt="" ></h4>
+    
+      
+    <div class="tigobunn">
+      <h3>稚児ヶ淵</h3> 
+      <p>島の西南端、岩屋の周辺に広がる、隆起現象でうまれた海食台地。屏風のように連なる断崖の真下にあり、「かながわの景勝50選」にも選ばれている。稚児ヶ淵の名前は、かつて鎌倉相承院の稚児・白菊がここから身を投げたことから付いたといわれています。</p>
+    </div> 
+  </div>  
+
+</section>
+
+<footer>
+    <p><small>© 2023 ISHIDA Yuusaku. All rights reserved.</small></p>
+</footer>
+    
+</main>
+
+
+    
+</body>
+</html>

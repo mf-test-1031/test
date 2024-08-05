@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水と自然。</title>
+ <style>
+*{  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 14px;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+
+}
+body{
+    font: 1rem; /*HTMLタグで適用した文字サイズクを基準とした比率で文字サイズを設定する。この場合、1rem=14px*/
+    line-height: 1.8; /*行間指定*/
+    color: rgb(0, 0, 0);
+}
+
+img {vertical-align: bottom; /*画像の上下方向の隙間を無くすために指定*/
+    width: 100%;
+    height: auto;
+} 
+
+li{
+ list-style:none; /*箇条書きのマーカー（黒っぽち）を消す*/
+}
+
+/*PC向けのCSSを定義する*/
+.sp{ display: none;
+}
+header{
+    display: flex;
+    background-color: rgb(207, 220, 233);
+}
+
+header h1{
+    width: 195px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+nav{
+    width: calc(100% - 195px - 30px);
+    padding: 0 40px 5px 30px; 
+}
+nav ul{
+  display: flex;
+    justify-content: flex-end; /*日本語圏だと、endは右寄せ、startは左よせ*/
+    align-items: flex-end; /*endは下揃え、startは上揃え*/
+    height: 69px; /*align-itemsを使うときはほぼ指定が必要*/
+    column-gap: 10%; /*横並びになる要素同士の間隔。両端の右側、左側には余白がとられない。*/
+}
+
+nav li{
+    width: 65px;
+}
+
+
+.yakushima_main {
+    position: relative; 
+}
+
+.yakushima_main_left{
+    width: 60%;
+    padding: 28% 30%;
+    position: absolute;
+}
+.yakushima_main_left h2{
+    position: absolute;
+    top: 5.2%;
+    left:  8.68%; /*enoshima_main_rightのうちの5％*/
+    width: 83.3%;
+    height: auto;
+}
+
+.yakushima_main_right{ 
+    width: 40%;
+    padding: 28% 20%;
+    position: relative;
+    left: 60%;
+}
+
+.yakumain_bunn{
+    font-size: 1.3vw;
+    right: 13%;
+    top: 36%;
+    position: absolute;
+
+}
+.yakumain_bunn h2{
+    font-size: 2.4vw;
+}    
+
+
+
+
+.shiratani {
+    position: relative; 
+}
+.shiratani_left{ 
+    width: 50%;
+    padding: 25% 25%;
+    position: absolute;
+}
+
+.shiratabunn_le{
+    font-size: 1.4vw;
+    position: absolute;
+    top: 13%;
+    left: 10.4%;
+    width: 80%;
+    height: auto;
+}
+
+.shiratani_left h4{
+    position: absolute;
+    bottom: 0%;
+    left: 10.4%;
+    width: 80%;
+    height: auto;
+}
+
+.shiratani_right{
+    width: 50%;
+    padding: 25% 25%;
+    position: relative;
+    left: 50%;
+}
+
+.shiratani_right h4{
+    width: 59.4%;
+    right: 20.8%;
+    top: -10%;
+    position: absolute;
+}
+
+.shiratabunn_ri{
+    font-size: 1.4vw;
+    right: 10.4%;
+    bottom: 0%;
+    width: 80%;
+    position: absolute;
+}
+
+
+
+
+
+.ookawanotaki {
+    position: relative; 
+}
+.ooka_left{ 
+    width: 40%;
+    padding: 28% 20%;
+    position: absolute;
+}
+.ooka_left h4{
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    width: 70%;
+    height: auto;
+}
+
+.ooka_right{
+    width: 60%;
+    padding: 28% 30%;
+    position: relative;
+    left: 40%;
+
+}
+
+.ooka_right h4{ 
+    top: 15%;
+    width: 45%;
+    right: 26%;
+    position: absolute;
+}
+
+.ookabunn{
+    font-size: 1.4vw;
+    right: 10.4%;
+    bottom: 7%;
+    width: 82%;
+    position: absolute;
+}
+
+
+
+footer{ color: #fff;
+  font-size: 2vw;
+  background-color: rgb(180, 201, 222);
+  display: flex;/*下の2つを使うために指定*/
+  justify-content: center;/*真ん中に配置する*/
+  align-items: center;/*縦方向の真ん中に配置する*/
+  padding: 3%;
+ 
+}
+ </style>   
+</head>
+<body>
+<main>
+    <header>
+        <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+        <nav class="pc">
+           <ul>
+               <li><a href="index.html"><img src="images/about.png" alt=""></a></li>
+               <li><a href="index2.html"><img src="images/enoshima.png" alt=""></a></li>
+               <li><a href="index3.html"><img src="images/yakushima.png" alt=""></a></li>
+           </ul>
+        </nav>
+   </header>
+
+ <section class="top">
+    <h2><img src="images/yaku_top.png " alt=""> </h2>
+</section>
+
+
+<section class="yakushima_main">
+<div class="yakushima_main_left"> 
+  <h2><img src="images/yaku_main.png" alt=""></h2>    
+ </div> 
+
+<div class="yakushima_main_right"> 
+  <div class="yakumain_bunn">
+    <h2>屋久島</h2> 
+    <p>全面積の約9割を山岳地帯が占め、標高1,936 mを誇る九州最高峰の宮之浦岳をはじめ1,000m級の山々が連なるため、「洋上のアルプス」と呼ばれることもある。「一ヶ月に35日雨が降る」といわれるほど、年間を通して湿潤な気候である。</p>
+</div>
+</div>  
+ 
+</section>  
+
+
+
+<section class="shiratani">
+    <div class="shiratani_left"> 
+        <div class="shiratabunn_le">
+            <h3>白谷雲水峡</h3> 
+            <p>屋久島は、特殊な多雨環境に適応した渓流植物や着生植物を豊富に含む特殊な生態系を有している。その中でも、屋久島には日本に存在する1600種類の苔のうち、約600種類もの苔が生息している。</p>
+          </div> 
+        <h4><img src="images/yaku_sira_image1.jpg" alt=""> </h4>
+   </div>  
+  
+   <div class="shiratani_right"> 
+      <h4><img src="images/yaku_sira_image2.jpg" alt="" ></h4>
+    
+      
+     <div class="shiratabunn_ri">
+      <p>綺麗な水に湿気の多い渓谷である白谷雲水峡では美しい緑の苔の森を見ることができる。コケやシダに覆われた神秘的な森は、宮崎駿監督の映画「もののけ姫」の舞台となったと言われている。</p>
+     </div> 
+  </div>  
+
+</section>
+
+
+<section class="ookawanotaki">
+    <div class="ooka_left"> 
+        <h4><img src="images/yaku_ooka_image1.jpg" alt=""> </h4>
+   </div>  
+  
+   <div class="ooka_right"> 
+      <h4><img src="images/yaku_ooka_image2.jpg" alt="" ></h4>
+    
+      
+    <div class="ookabunn">
+      <h3>大川の滝</h3> 
+      <p>屋久島のほぼ南西部に位置しており、水量・規模ともに九州最大級で、落差は88mを誇る。日本の滝百選にも選ばれており、周囲が山と緑に囲まれた秘境的な存在。滝つぼにはハゼの仲間であるヨシノボリなどが棲息。周辺では川辺の野鳥のカワセミなどを観察できる。</p>
+    </div> 
+  </div>  
+
+</section>
+
+<footer>
+  <p><small>© 2023 ISHIDA Yuusaku. All rights reserved.</small></p>
+</footer>
+    
+</main>
+
+
+    
+</body>
+</html>
